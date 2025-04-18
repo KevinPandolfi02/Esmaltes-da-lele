@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Esmaltes da Leticia 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Esmaltes da Leticia 💖</h1>
+
+  <div class="nav-buttons">
+    <button onclick="mostrarAba('catalogo')">💅 Catálogo</button>
+    <button onclick="mostrarAba('desejos')">🌟 Desejos</button>
+  </div>
+
+  <div id="aba-catalogo">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar por cor..." onkeyup="filtrarEsmaltes()">
+    </div>
+    <div class="catalog" id="catalogoEsmaltes"></div>
+  </div>
+
+  <div id="aba-desejos" class="hidden">
+    <div class="catalog" id="listaDesejos"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
